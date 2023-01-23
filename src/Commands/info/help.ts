@@ -3,6 +3,9 @@ import {
   ChatInputCommandInteraction,
   EmbedBuilder,
   codeBlock,
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
 } from 'discord.js'
 
 export = class extends Command {
@@ -32,6 +35,13 @@ export = class extends Command {
 - 차단해제`
             )}
           `),
+      ],
+      components: [
+        new ActionRowBuilder<ButtonBuilder>().addComponents(
+          new ButtonBuilder()
+            .setLabel('Doremi 소스코드')
+            .setStyle(ButtonStyle.Link)
+        ),
       ],
     })
   }
