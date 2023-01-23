@@ -41,6 +41,7 @@ export = class extends Command {
           new ButtonBuilder()
             .setLabel('Doremi 소스코드')
             .setStyle(ButtonStyle.Link)
+            .setURL('https://github.com/Migan-Studio/Doremi-V2.git')
         ),
       ],
     })
